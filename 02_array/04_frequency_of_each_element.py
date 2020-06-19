@@ -5,14 +5,10 @@ for i in range (int(size)):
 	num=input("Enter number: ")
 	myarr.append(int(num))
 print(myarr)
-def frequency(arr):
-	for i in range(int(size)):
-		count=0
-		for e in arr:
-			if e==arr[i]:
-				count+=1
-		print(f'Frequency of {arr[i]} is {count}')
 
-frequency(myarr)
+for e in myarr:
+	print(f"frequency of {e} is", end=' ')
+	print(myarr.count(e))
+	
 
 
