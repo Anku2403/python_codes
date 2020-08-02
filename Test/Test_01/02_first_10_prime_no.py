@@ -2,10 +2,11 @@
 N=10
 x=2
 while(N):
-    global i
-    for i in range(2, x):
+    i=2
+    while(i<=x):
         if (x%i==0):
             break
+        i=i+1
     if (i==x):
         print(x,end=" ")
         N=N-1
